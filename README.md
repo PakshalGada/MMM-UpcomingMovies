@@ -4,7 +4,7 @@ A [MagicMirror²](https://magicmirror.builders/) module that displays **upcoming
 
 ---
 
-## ✨ Features
+## Features
 - Fetches **upcoming movies** from TMDb.
 - Displays **poster, title, release date, and short overview**.
 - Automatic **slideshow rotation** between movies.
@@ -13,7 +13,7 @@ A [MagicMirror²](https://magicmirror.builders/) module that displays **upcoming
 
 ---
 
-## 📦 Installation
+## Installation
 1. Navigate to your MagicMirror `modules` folder:
    ```bash
    cd ~/MagicMirror/modules
@@ -31,7 +31,7 @@ A [MagicMirror²](https://magicmirror.builders/) module that displays **upcoming
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 Add the module to your MagicMirror `config.js`:
 
 ```js
@@ -59,7 +59,7 @@ Add the module to your MagicMirror `config.js`:
 
 ---
 
-## 🎨 Styling
+## Styling
 This module comes with a CSS file (`MMM-UpcomingMovies.css`):
 - Movie posters have a **shadow and hover zoom effect**.
 - Text is **centered** with clean spacing.
@@ -69,7 +69,7 @@ You can override styles in your global `custom.css`.
 
 ---
 
-## 🔧 Notes
+## Notes
 - Requires an **active internet connection** to fetch data.
 - If `apiKey` is missing or invalid, the module will show an error in logs and display no movies.
 - If no results are found, you’ll see *“No upcoming movies found.”* on screen.
