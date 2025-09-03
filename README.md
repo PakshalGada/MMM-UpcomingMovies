@@ -3,6 +3,8 @@
 A [MagicMirror²](https://magicmirror.builders/) module that displays **upcoming movies** using [The Movie Database (TMDb)](https://www.themoviedb.org/) API. It cycles through posters, titles, release dates, and overviews in a slideshow-style interface.
 
 ---
+## Screenshot
+![Movie Demo](.github/example.png)
 
 ## Features
 - Fetches **upcoming movies** from TMDb.
