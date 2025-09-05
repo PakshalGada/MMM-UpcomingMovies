@@ -4,7 +4,9 @@ A [MagicMirror²](https://magicmirror.builders/) module that displays **upcoming
 
 ---
 ## Screenshot
-![Movie Demo](.github/example.png)
+![Movie Demo](screenshot.png)
+
+---
 
 ## Features
 - Fetches **upcoming movies** from TMDb.
