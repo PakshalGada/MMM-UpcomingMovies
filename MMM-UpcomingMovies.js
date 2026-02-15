@@ -4,7 +4,7 @@ Module.register("MMM-UpcomingMovies", {
     region: 'US',
     maxResults: 10,
     updateInterval: 1000 * 60 * 60, 
-    rotateInterval: 15000 // 15 seconds
+    rotateInterval: 15000 
   },
 
   start: function() {
@@ -37,7 +37,7 @@ Module.register("MMM-UpcomingMovies", {
         const oldIndex = this.currentIndex;
         this.currentIndex = (this.currentIndex + 1) % this.movies.length;
         Log.info("MMM-UpcomingMovies: Rotating from movie " + oldIndex + " to " + this.currentIndex);
-        this.updateDom(300); // Smooth transition with 300ms fade
+        this.updateDom(300); 
       }, this.config.rotateInterval);
     } else {
       Log.info("MMM-UpcomingMovies: Not starting slideshow - only " + (this.movies ? this.movies.length : 0) + " movies");
@@ -69,7 +69,6 @@ Module.register("MMM-UpcomingMovies", {
       return wrapper;
     }
 
-    // Show only the current movie
     const movie = this.movies[this.currentIndex];
     const item = document.createElement('div');
     item.className = 'movie-item movie-slide';
@@ -90,7 +89,6 @@ Module.register("MMM-UpcomingMovies", {
     date.className = 'release';
     date.innerText = movie.release_date || '';
 
-    // Add overview if available
     if (movie.overview) {
       const overview = document.createElement('div');
       overview.className = 'overview';
